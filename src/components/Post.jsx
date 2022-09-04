@@ -13,7 +13,7 @@ import {
 
 export default function Post() {
   return (
-    <Card sx={{margin:5 }}>
+    <Card sx={{margin:'10px auto', width:'95%' }}>
         <CardHeader
             avatar={
             <Avatar sx={{ bgcolor: "red" }} aria-label="recipe">

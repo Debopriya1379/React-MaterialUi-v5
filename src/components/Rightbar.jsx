@@ -15,10 +15,10 @@ import {
 
 export default function Rightbar() {
   return (
-    <Box flex={2} p={2} sx={{display:{ xs:'none', sm:'block'}}}>
-        <Box position='fixed' width={350}>
+    <Box flex={2} p={2} sx={{display:{ xs:'none', sm:'none', md:'block'}}}>
+        <Box position='fixed' sx={{width:{md:350, sm:300}}} alignItems='center'>
             <Typography variant="h6" fontWeight={100} mb={2}>Online Friends</Typography>
-            <AvatarGroup max={5}>
+            <AvatarGroup max={7} sx={{justifyContent:'center'}}>
                 <Avatar
                     alt="Remy Sharp"
                     src="https://material-ui.com/static/images/avatar/1.jpg"

@@ -4,6 +4,7 @@ import Feed from "./components/Feed";
 import Sidebar from "./components/Sidebar";
 import Rightbar from "./components/Rightbar";
 import Add from "./components/Add";
+import MobscrnMenu from "./components/MobscrnMenu";
 import { useState } from "react";
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <Box bgcolor={"background.default"} color={"text.primary"}>
         <Navbar/>
-        <Stack direction='row' justifyContent='space-between' spacing={2}>
+        <MobscrnMenu setMode={setMode} mode={mode}/>
+        <Stack direction='row' justifyContent='space-between' spacing={0}>
           <Sidebar setMode={setMode} mode={mode} />
           <Feed/>
           <Rightbar/>

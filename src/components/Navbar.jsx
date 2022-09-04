@@ -1,4 +1,5 @@
-import { Pets,Notifications,Mail } from "@mui/icons-material"
+import { Notifications,Mail } from "@mui/icons-material"
+import FacebookIcon from '@mui/icons-material/Facebook';
 import { AppBar,Box,styled,Toolbar, Typography,Avatar,Badge,InputBase,Menu,MenuItem} from "@mui/material"
 import { useState } from "react"
 
@@ -10,7 +11,6 @@ const StyledToolBar = styled(Toolbar)({
 
 const Search = styled('div')(({theme})=>({
     backgroundColor:'white',
-    // color: 'gray',
     padding: '0 10px',
     borderRadius: theme.shape.borderRadius,
     width: '40%',
@@ -40,10 +40,10 @@ export default function Navbar() {
         <AppBar position="sticky">
             <StyledToolBar>
                 <Typography variant="h6" sx={{display:{xs:'none', sm:'block'}}}>
-                    D.code
+                    ACEBOOK
                 </Typography>
-                <Pets sx={{display:{xs:'block', sm:'none' }}}/>
-                <Search><InputBase placeholder="search"/></Search>
+                <FacebookIcon sx={{display:{xs:'block', sm:'none' }}}/>
+                <Search><InputBase placeholder="search" sx={{color:'black'}}/></Search>
                 <Icons>
                     <Badge badgeContent={4} color='error' >
                         <Mail/>
